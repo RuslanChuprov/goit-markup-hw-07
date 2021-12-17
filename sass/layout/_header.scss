@@ -80,6 +80,7 @@
 .site-nav .link {
   position: relative;
 }
+
 .site-nav .link.current::after {
   position: absolute;
   content: "";
@@ -88,7 +89,6 @@
   background-color: var(--accent-text-color);
   left: 0;
   bottom: -1px;
-  border: 1px solid var(--logo-color);
   box-sizing: border-box;
   border-radius: 2px;
 }
