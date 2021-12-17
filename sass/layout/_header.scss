@@ -1,5 +1,3 @@
-/* ------------header------------- */
-
 .header {
   border-bottom: 1px solid var(--header-border);
 }
@@ -48,12 +46,12 @@
 }
 .site-nav {
   display: flex;
-
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  @include fontstyles(var(--title-text-color), 500, 14px, 1.2, 0.02em);
+  // color: var(--title-text-color);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.2;
+  // letter-spacing: 0.02em;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 

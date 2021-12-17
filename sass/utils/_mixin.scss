@@ -1,0 +1,7 @@
+@mixin fontstyles($col, $fw, $fs, $lh, $ls) {
+  color: $col;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
