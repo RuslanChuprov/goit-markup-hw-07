@@ -628,4 +628,60 @@ img {
 .footer-social-link:focus {
   background-color: var(--accent-text-color);
 }
+
+.online {
+  margin-left: 93px;
+}
+
+.online-input {
+  background-color: transparent;
+  width: 358px;
+  height: 50px;
+  border: 1px solid var(--input-form-border);
+  border-radius: 4px;
+  outline: none;
+  background-color: transparent;
+  color: var(--accent-color);
+  transition: border-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.online-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.online-title {
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.online-button {
+  display: flex;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 0;
+  margin-left: 12px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-text-color);
+  color: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.online-button-icon {
+  margin-left: 10px;
+  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*# sourceMappingURL=main.css.map */
