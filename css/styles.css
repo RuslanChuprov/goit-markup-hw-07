@@ -131,7 +131,7 @@
   line-height: 1.87;
 }
 
-.project-item-wrap {
+/* .project-item-wrap { 
   position: relative;
   overflow: hidden;
 }
@@ -149,10 +149,10 @@
   padding: 63px 24px;
   transform: translateY(101%);
   transition: transform var(--time-duration);
-}
+ } */
 
 /* -----------Footer------ */
-
+/*
 .address .link {
   color: var(--address-color);
 }
@@ -254,7 +254,7 @@
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-text-color);
-}
+}  */
 
 .online {
   margin-left: 93px;
