@@ -5,12 +5,13 @@
 .section .customers-title,
 .section .images,
 .section .list-team {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  @include fontstyles(var(--title-text-color), 700, 36px, 1.16, 0.03em);
+  // color: var(--title-text-color);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
+  // letter-spacing: 0.03em;
 }
 
 .section .list-team {
@@ -25,11 +26,12 @@
 .title-description {
   margin-bottom: 10px;
   text-align: left;
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  @include fontstyles(var(--title-text-color), 700, 14px, 1.2, 0.03em);
+  // color: var(--title-text-color);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.2;
+  // letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -39,20 +41,22 @@
 }
 
 .title-team {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
+  @include fontstyles(var(--title-text-color), 500, 16px, 1.2, null);
+  // color: var(--title-text-color);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.2;
   text-align: center;
   margin-bottom: 10px;
 }
 .section-content {
   text-align: left;
-  color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include fontstyles(var(--primary-text-color), 400, 14px, 1.71, 0.03em);
+  // color: var(--primary-text-color);
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
 }
 
 .profession {
@@ -93,10 +97,11 @@
   border: 0;
 
   background-color: var(--background-color);
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
+  @include fontstyles(var(--title-text-color), 500, 16px, 1.6, null);
+  // color: var(--title-text-color);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.6;
   cursor: pointer;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
     background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
@@ -112,6 +117,7 @@
 }
 
 .title .sites {
+  @include fontstyles(null, 700, 18px, 2, 0.06em);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -126,7 +132,8 @@
 }
 
 .section .content {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.87;
+  @include fontstyles(var(--primary-text-color), null, 16px, 1.87, null);
+  // color: var(--primary-text-color);
+  // font-size: 16px;
+  // line-height: 1.87;
 }

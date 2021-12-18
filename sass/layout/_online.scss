@@ -22,12 +22,7 @@
 
 .online-title {
   @include fontstyles(var(--accent-color), 700, 14px, 1.2, 0.03em);
-  // color: var(--accent-color);
   margin-bottom: 20px;
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 1.2;
-  // letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -42,13 +37,8 @@
 
   background-color: var(--accent-text-color);
   @include fontstyles(var(--accent-color), 500, 16px, 1.6, null);
-  // color: var(--accent-color);
-
   width: 200px;
   height: 50px;
-  // font-weight: 500;
-  // font-size: 16px;
-  // line-height: 1.6;
   cursor: pointer;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
     background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
