@@ -512,10 +512,10 @@ img {
   left: 0;
   height: 100%;
   color: var(--accent-color);
-  background-color: var(--top-box-color);
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
+  background-color: var(--top-box-color);
   padding: 63px 24px;
   transform: translateY(101%);
   transition: transform var(--time-duration);
@@ -794,10 +794,6 @@ img {
 }
 
 .title .sites {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
