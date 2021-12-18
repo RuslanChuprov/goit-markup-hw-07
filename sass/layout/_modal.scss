@@ -39,10 +39,8 @@
 
 .modal-input-text {
   @include fontstyles(var(--logo-color), null, 12px, null, null);
-  // font-size: 12px;
   display: block;
   margin-bottom: 5px;
-  // color: var(--logo-color);
 }
 
 .modal-input {
@@ -125,12 +123,7 @@
 .modal-title {
   position: absolute;
   @include fontstyles(var(--title-text-color), 700, 20px, 1.15, 0.03em);
-  // font-weight: 700;
-  // font-size: 20px;
-  // line-height: 1.15;
   text-align: center;
-  // letter-spacing: 0.03em;
-  // color: var(--title-text-color);
   margin-bottom: 12px;
 }
 
@@ -142,13 +135,8 @@
   border: 0;
   background-color: var(--accent-text-color);
   @include fontstyles(var(--accent-color), 500, 16px, 1.6, null);
-  // color: var(--accent-color);
-
   width: 200px;
   height: 50px;
-  // font-weight: 500;
-  // font-size: 16px;
-  // line-height: 1.6;
   cursor: pointer;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
     background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
@@ -162,12 +150,7 @@
 .modal-check-text {
   display: flex;
   @include fontstyles(var(--primary-text-color), 400, 14px, 1.71, 0.03em);
-  // color: var(--primary-text-color);
   align-items: center;
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
 }
 
 .modal-check-text span {
@@ -188,12 +171,6 @@
 
 .modal-check-link {
   @include fontstyles(var(--accent-text-color), 400, 14px, 1.71, 0.03em);
-  // color: var(--accent-text-color);
-
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
   text-decoration-line: underline;
   padding-left: 5px;
 }
