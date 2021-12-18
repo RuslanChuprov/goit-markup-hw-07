@@ -25,10 +25,8 @@
 .footer .mail,
 .footer .phone,
 .footer .city {
-  font-size: 14px;
-  font-weight: 400;
+  @include fontstyles(null, 400, 14px, 1.7, null);
   font-style: normal;
-  line-height: 1.7;
   display: block;
   margin-bottom: 9px;
 }
@@ -56,12 +54,8 @@
 
 .connect-title,
 .online-title {
-  color: var(--accent-color);
+  @include fontstyles(var(--accent-color), 700, 14px, 1.2, 0.03em);
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 

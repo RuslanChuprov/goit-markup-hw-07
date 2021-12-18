@@ -335,22 +335,23 @@ img {
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-title,
-.hero-button {
-  color: var(--accent-color);
-}
-
 .hero-title {
-  width: 696px;
-  margin: 0 auto 30px;
+  color: var(--accent-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
+  width: 696px;
+  margin: 0 auto 30px;
   text-transform: uppercase;
 }
 
 .hero-button {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
   text-align: center;
   width: 200px;
   height: 50px;
@@ -358,10 +359,6 @@ img {
   border: 0;
   background-color: var(--accent-text-color);
   font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
   cursor: pointer;
 }
 
@@ -551,10 +548,10 @@ img {
 .footer .mail,
 .footer .phone,
 .footer .city {
-  font-size: 14px;
   font-weight: 400;
-  font-style: normal;
+  font-size: 14px;
   line-height: 1.7;
+  font-style: normal;
   display: block;
   margin-bottom: 9px;
 }
@@ -583,11 +580,11 @@ img {
 .connect-title,
 .online-title {
   color: var(--accent-color);
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -652,11 +649,11 @@ img {
 
 .online-title {
   color: var(--accent-color);
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -670,11 +667,11 @@ img {
   align-items: center;
   background-color: var(--accent-text-color);
   color: var(--accent-color);
-  width: 200px;
-  height: 50px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  width: 200px;
+  height: 50px;
   cursor: pointer;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
