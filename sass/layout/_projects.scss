@@ -52,11 +52,7 @@
   left: 0;
   height: 100%;
   @include fontstyles(var(--accent-color), null, 18px, 1.55, 0.03em);
-  // color: var(--accent-color);
   background-color: var(--top-box-color);
-  // font-size: 18px;
-  // line-height: 1.55;
-  // letter-spacing: 0.03em;
   padding: 63px 24px;
   transform: translateY(101%);
   transition: transform var(--time-duration);
