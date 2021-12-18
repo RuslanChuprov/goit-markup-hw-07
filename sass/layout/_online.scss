@@ -16,9 +16,6 @@
 
 .online-form {
   @include displayfunc(flex, center, center, null, null);
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
 }
 
 .online-title {
@@ -29,13 +26,11 @@
 
 .online-button {
   @include displayfunc(flex, center, center, null, null);
-  // display: flex;
+
   border-radius: 4px;
   padding: 6px 22px;
   border: 0;
   margin-left: 12px;
-  // justify-content: center;
-  // align-items: center;
 
   background-color: var(--accent-text-color);
   @include fontstyles(var(--accent-color), 500, 16px, 1.6, null);

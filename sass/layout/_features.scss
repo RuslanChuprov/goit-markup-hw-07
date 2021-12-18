@@ -31,7 +31,5 @@
   width: 370px;
   height: 70px;
   bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include displayfunc(flex, center, center, null, null);
 }
