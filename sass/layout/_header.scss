@@ -98,7 +98,6 @@
 .auth-nav .phone,
 .auth-nav .first-mail {
   display: flex;
-
   @include fontstyles(var(--primary-text-color), 500, 14px, 1.2, 0.02em);
   padding: 32px 0;
   align-items: center;
