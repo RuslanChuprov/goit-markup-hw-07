@@ -17,11 +17,9 @@
 }
 
 .property-item {
-  display: flex;
+  @include displayfunc(flex, center, center, null, null);
   background-color: var(--background-color);
   width: 270px;
   height: 120px;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
 }

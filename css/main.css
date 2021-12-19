@@ -409,11 +409,11 @@ img {
 
 .property-item {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--background-color);
   width: 270px;
   height: 120px;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -759,7 +759,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: center;
   margin-bottom: 50px;
 }
 
