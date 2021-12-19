@@ -757,6 +757,7 @@ img {
 
 .portfolio-btns {
   display: flex;
+  align-items: center;
   justify-content: center;
   align-self: center;
   margin-bottom: 50px;

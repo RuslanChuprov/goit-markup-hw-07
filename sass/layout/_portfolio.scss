@@ -57,8 +57,9 @@
 }
 
 .portfolio-btns {
-  display: flex;
-  justify-content: center;
+  @include displayfunc(flex, center, center, null, null);
+  // display: flex;
+  // justify-content: center;
   align-self: center;
   margin-bottom: 50px;
 }
