@@ -306,13 +306,13 @@ img {
 .auth-nav .phone,
 .auth-nav .first-mail {
   display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding: 32px 0;
-  align-items: center;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -949,8 +949,8 @@ img {
 
 .modal-submit-button {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   border-radius: 4px;
   border: 0;
   background-color: var(--accent-text-color);
@@ -971,12 +971,12 @@ img {
 
 .modal-check-text {
   display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  align-items: center;
 }
 
 .modal-check-text span {

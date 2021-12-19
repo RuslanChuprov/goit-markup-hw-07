@@ -109,9 +109,10 @@
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid var(--address-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include displayfunc(flex, center, center, null, null);
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -128,9 +129,10 @@
 }
 
 .modal-submit-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include displayfunc(flex, center, center, null, null);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   border-radius: 4px;
   border: 0;
   background-color: var(--accent-text-color);
@@ -148,9 +150,10 @@
 }
 
 .modal-check-text {
-  display: flex;
+  @include displayfunc(flex, center, null, null, null);
+  // display: flex;
   @include fontstyles(var(--primary-text-color), 400, 14px, 1.71, 0.03em);
-  align-items: center;
+  // align-items: center;
 }
 
 .modal-check-text span {
@@ -159,9 +162,10 @@
   border: 2px solid var(--logo-color);
   margin-right: 5px;
   border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include displayfunc(flex, center, center, null, null);
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
 }
 
 .modal-check:checked + .modal-check-text span {

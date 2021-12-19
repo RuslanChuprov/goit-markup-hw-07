@@ -4,8 +4,6 @@
 
 .logo-head {
   @include displayfunc(flex, center, null, null, null);
-  // display: flex;
-  // align-items: center;
 }
 
 .link {
@@ -99,10 +97,8 @@
 .auth-nav .phone,
 .auth-nav .first-mail {
   @include displayfunc(flex, center, null, null, null);
-  // display: flex;
   @include fontstyles(var(--primary-text-color), 500, 14px, 1.2, 0.02em);
   padding: 32px 0;
-  // align-items: center;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
