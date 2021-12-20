@@ -21,6 +21,13 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-text-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
 }
 
 .customers-item + .customers-item {
@@ -41,12 +48,12 @@
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-item:hover,
-.customers-item:focus {
-  border: 1px solid var(--accent-text-color);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+// .customers-item:hover,
+// .customers-item:focus {
+//   border: 1px solid var(--accent-text-color);
+//   box-sizing: border-box;
+//   border-radius: 4px;
+// }
 
 .customers-link:hover,
 .customers-link:focus {
