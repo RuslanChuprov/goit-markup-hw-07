@@ -2,11 +2,13 @@
   display: block;
 }
 
-.section .customers-title,
-.section .images,
-.section .list-team {
-  @include fontstyles(var(--title-text-color), 700, 36px, 1.16, 0.03em);
-  text-align: center;
+.section {
+  .customers-title,
+  .images,
+  .list-team {
+    @include fontstyles(var(--title-text-color), 700, 36px, 1.16, 0.03em);
+    text-align: center;
+  }
 }
 
 .section .list-team {
@@ -59,6 +61,11 @@
 .portfolio-btns {
   @include displayfunc(flex, center, center, null, null);
   margin-bottom: 50px;
+  .current {
+    background-color: var(--accent-text-color);
+    color: var(--accent-color);
+    box-shadow: 0 4px 4px 0 var(--button-shadow);
+  }
 }
 
 .btns-list:first-child {
@@ -79,15 +86,14 @@
   cursor: pointer;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
     background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio-button:hover,
-.portfolio-button:focus,
-.portfolio-button:active,
-.portfolio-btns .current {
-  background-color: var(--accent-text-color);
-  color: var(--accent-color);
-  box-shadow: 0 4px 4px 0 var(--button-shadow);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--accent-text-color);
+    color: var(--accent-color);
+    box-shadow: 0 4px 4px 0 var(--button-shadow);
+  }
 }
 
 .title .sites {

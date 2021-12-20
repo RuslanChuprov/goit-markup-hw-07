@@ -469,17 +469,17 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-wrap {
-  display: block;
-}
-
 .projects .project-wrap:hover,
 .projects .project-wrap:focus {
   box-shadow: 0 4px 4px 0 var(--button-shadow);
 }
 
-.projects .project-wrap:hover .project-top-text,
-.projects .project-wrap:focus .project-top-text {
+.project-wrap {
+  display: block;
+}
+
+.project-wrap:hover .project-top-text,
+.project-wrap:focus .project-top-text {
   transform: translateY(0);
 }
 
@@ -754,6 +754,12 @@ img {
   margin-bottom: 50px;
 }
 
+.portfolio-btns .current {
+  background-color: var(--accent-text-color);
+  color: var(--accent-color);
+  box-shadow: 0 4px 4px 0 var(--button-shadow);
+}
+
 .btns-list:first-child {
   margin-left: 0;
 }
@@ -776,10 +782,7 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus,
-.portfolio-button:active,
-.portfolio-btns .current {
+.portfolio-button:hover, .portfolio-button:focus, .portfolio-button:active {
   background-color: var(--accent-text-color);
   color: var(--accent-color);
   box-shadow: 0 4px 4px 0 var(--button-shadow);
