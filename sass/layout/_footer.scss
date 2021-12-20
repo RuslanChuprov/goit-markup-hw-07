@@ -1,5 +1,10 @@
 .address .link {
   color: var(--address-color);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-text-color);
+  }
 }
 
 .footer {
@@ -21,13 +26,15 @@
   color: var(--address-color);
 }
 
-.footer .mail,
-.footer .phone,
-.footer .city {
-  @include fontstyles(null, 400, 14px, 1.7, null);
-  font-style: normal;
-  display: block;
-  margin-bottom: 9px;
+.footer {
+  .mail,
+  .phone,
+  .city {
+    @include fontstyles(null, 400, 14px, 1.7, null);
+    font-style: normal;
+    display: block;
+    margin-bottom: 9px;
+  }
 }
 
 .bottom .logo {
@@ -42,10 +49,10 @@
   margin-bottom: 9px;
 }
 
-.address .link:focus,
-.address .link:hover {
-  color: var(--accent-text-color);
-}
+// .address .link:focus,
+// .address .link:hover {
+//   color: var(--accent-text-color);
+// }
 
 .connect {
   margin-left: 70px;
@@ -72,6 +79,16 @@
   border-radius: 50%;
   transition: background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--footer-social-link-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
+
+  &:hover .footer-social-icon,
+  &:focus .footer-social-icon {
+    fill: var(--accent-color);
+  }
 }
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
@@ -82,12 +99,12 @@
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover .footer-social-icon,
-.footer-social-link:focus .footer-social-icon {
-  fill: var(--accent-color);
-}
+// .footer-social-link:hover .footer-social-icon,
+// .footer-social-link:focus .footer-social-icon {
+//   fill: var(--accent-color);
+// }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-text-color);
-}
+// .footer-social-link:hover,
+// .footer-social-link:focus {
+//   background-color: var(--accent-text-color);
+// }

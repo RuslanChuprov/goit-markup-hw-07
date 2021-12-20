@@ -522,6 +522,10 @@ img {
   color: var(--address-color);
 }
 
+.address .link:focus, .address .link:hover {
+  color: var(--accent-text-color);
+}
+
 .footer {
   display: flex;
   padding-top: 60px;
@@ -565,11 +569,6 @@ img {
   margin-bottom: 9px;
 }
 
-.address .link:focus,
-.address .link:hover {
-  color: var(--accent-text-color);
-}
-
 .connect {
   margin-left: 70px;
 }
@@ -603,13 +602,8 @@ img {
   background-color: var(--footer-social-link-color);
 }
 
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
-}
-
-.footer-social-icon {
-  fill: var(--accent-color);
-  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+.footer-social-link:hover, .footer-social-link:focus {
+  background-color: var(--accent-text-color);
 }
 
 .footer-social-link:hover .footer-social-icon,
@@ -617,9 +611,13 @@ img {
   fill: var(--accent-color);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-text-color);
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+
+.footer-social-icon {
+  fill: var(--accent-color);
+  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .online {
