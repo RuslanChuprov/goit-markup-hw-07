@@ -5,15 +5,15 @@
 
 .properties {
   display: flex;
-}
 
-.properties .item {
-  margin-right: 30px;
-  width: 270px;
-}
+  .item {
+    margin-right: 30px;
+    width: 270px;
+  }
 
-.properties .item:last-child {
-  margin-right: 0;
+  .item:last-child {
+    margin-right: 0;
+  }
 }
 
 .property-item {
