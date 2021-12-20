@@ -45,16 +45,16 @@
   display: flex;
   @include fontstyles(var(--title-text-color), 500, 14px, 1.2, 0.02em);
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.site-nav .item + .item {
-  margin-left: 50px;
+  &__item + &__item {
+    margin-left: 50px;
+  }
 }
 
 .site-nav {
-  .studio,
-  .portfolio,
-  .contacts {
+  &__studio,
+  &__portfolio,
+  &__contacts {
     color: var(--title-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
@@ -90,16 +90,20 @@
   display: flex;
   margin-left: auto;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
 }
 
-.auth-nav .item + .item {
-  margin-left: 50px;
-}
+// .auth-nav .item + .item {
+//   margin-left: 50px;
+// }
 
 .auth-nav {
-  .mail,
-  .phone,
-  .first-mail {
+  &__mail,
+  &__phone,
+  &__first-mail {
     @include displayfunc(flex, center, null, null, null);
     @include fontstyles(var(--primary-text-color), 500, 14px, 1.2, 0.02em);
     padding: 32px 0;

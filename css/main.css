@@ -252,13 +252,11 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .item + .item {
+.site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
 
-.site-nav .studio,
-.site-nav .portfolio,
-.site-nav .contacts {
+.site-nav__studio, .site-nav__portfolio, .site-nav__contacts {
   color: var(--title-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -293,13 +291,11 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-nav .item + .item {
+.auth-nav__item + .auth-nav__item {
   margin-left: 50px;
 }
 
-.auth-nav .mail,
-.auth-nav .phone,
-.auth-nav .first-mail {
+.auth-nav__mail, .auth-nav__phone, .auth-nav__first-mail {
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
