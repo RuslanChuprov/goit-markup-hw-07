@@ -871,6 +871,10 @@ img {
   fill: var(--accent-text-color);
 }
 
+.modal-input:hover, .modal-input:focus {
+  border-color: var(--accent-text-color);
+}
+
 .modal-text {
   display: block;
   width: 100%;
@@ -885,10 +889,7 @@ img {
   transition: border-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover,
-.modal-input:focus,
-.modal-text:focus,
-.modal-text:hover {
+.modal-text:focus, .modal-text:hover {
   border-color: var(--accent-text-color);
 }
 
@@ -923,8 +924,7 @@ img {
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-button:hover,
-.modal-close-button:focus {
+.modal-close-button:hover, .modal-close-button:focus {
   fill: var(--accent-text-color);
 }
 
