@@ -41,26 +41,19 @@
   align-items: center;
   justify-content: center;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  &:hover .customers-icon,
+  &:focus .customers-icon {
+    fill: var(--accent-text-color);
+  }
 }
 
 .customers-icon {
   fill: var(--social-link-color);
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-// .customers-item:hover,
-// .customers-item:focus {
-//   border: 1px solid var(--accent-text-color);
-//   box-sizing: border-box;
-//   border-radius: 4px;
-// }
-
-.customers-link:hover,
-.customers-link:focus {
-  background-color: var(--accent-color);
-}
-
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
-  fill: var(--accent-text-color);
 }

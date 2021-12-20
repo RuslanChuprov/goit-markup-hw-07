@@ -123,9 +123,8 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon {
-  fill: var(--social-link-color);
-  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+.social-link:hover, .social-link:focus {
+  background-color: var(--accent-text-color);
 }
 
 .social-link:hover .social-icon,
@@ -133,9 +132,9 @@ img {
   fill: var(--accent-color);
 }
 
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-text-color);
+.social-icon {
+  fill: var(--social-link-color);
+  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers {
@@ -182,19 +181,18 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-icon {
-  fill: var(--social-link-color);
-  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customers-link:hover,
-.customers-link:focus {
+.customers-link:hover, .customers-link:focus {
   background-color: var(--accent-color);
 }
 
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
   fill: var(--accent-text-color);
+}
+
+.customers-icon {
+  fill: var(--social-link-color);
+  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header {
