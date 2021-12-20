@@ -16,6 +16,10 @@
   @include fontstyles(var(--accent-text-color), 700, 26px, 1.2, null);
   font-family: Raleway, sans-serif;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--accent-text-color);
+  }
 }
 
 .top-logo {
@@ -30,9 +34,6 @@
 .down,
 .city {
   color: var(--accent-color);
-}
-.logo:hover {
-  color: var(--accent-text-color);
 }
 
 /* site nav */
@@ -50,24 +51,26 @@
   margin-left: 50px;
 }
 
-.site-nav .studio,
-.site-nav .portfolio,
-.site-nav .contacts {
-  color: var(--title-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block;
-  transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link.current {
-  color: var(--accent-text-color);
+.site-nav {
+  .studio,
+  .portfolio,
+  .contacts {
+    color: var(--title-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .site-nav .link {
   position: relative;
+
+  &:hover,
+  &:focus,
+  &.current {
+    color: var(--accent-text-color);
+  }
 }
 
 .site-nav .link.current::after {
@@ -93,25 +96,29 @@
   margin-left: 50px;
 }
 
-.auth-nav .mail,
-.auth-nav .phone,
-.auth-nav .first-mail {
-  @include displayfunc(flex, center, null, null, null);
-  @include fontstyles(var(--primary-text-color), 500, 14px, 1.2, 0.02em);
-  padding: 32px 0;
-  transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+.auth-nav {
+  .mail,
+  .phone,
+  .first-mail {
+    @include displayfunc(flex, center, null, null, null);
+    @include fontstyles(var(--primary-text-color), 500, 14px, 1.2, 0.02em);
+    padding: 32px 0;
+    transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: var(--accent-text-color);
-}
+.auth-nav .link {
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 
-.auth-nav .link:hover .mail-icon,
-.auth-nav .link:focus .mail-icon,
-.auth-nav .link:hover .phone-icon,
-.auth-nav .link:focus .phone-icon {
-  fill: var(--accent-text-color);
+  &:hover .mail-icon,
+  &:focus .mail-icon,
+  &:hover .phone-icon,
+  &:focus .phone-icon {
+    fill: var(--accent-text-color);
+  }
 }
 
 .mail-icon,
