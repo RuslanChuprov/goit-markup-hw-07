@@ -143,16 +143,16 @@ img {
   padding-bottom: 88px;
 }
 
-.customers-title {
+.customers__title {
   margin-bottom: 50px;
 }
 
-.customers-list {
+.customers__list {
   display: flex;
   justify-content: center;
 }
 
-.customers-item {
+.customers__item {
   background-color: var(--accent-color);
   width: 170px;
   height: 92px;
@@ -162,17 +162,17 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-item:hover, .customers-item:focus {
+.customers__item:hover, .customers__item:focus {
   border: 1px solid var(--accent-text-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
 
-.customers-item + .customers-item {
+.customers__item + .customers__item {
   margin-left: 30px;
 }
 
-.customers-link {
+.customers__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -181,16 +181,16 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-link:hover, .customers-link:focus {
+.customers__link:hover, .customers__link:focus {
   background-color: var(--accent-color);
 }
 
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
+.customers__link:hover .customers__icon,
+.customers__link:focus .customers__icon {
   fill: var(--accent-text-color);
 }
 
-.customers-icon {
+.customers__icon {
   fill: var(--social-link-color);
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
