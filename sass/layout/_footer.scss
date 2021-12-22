@@ -33,7 +33,15 @@
     @include fontstyles(null, 400, 14px, 1.7, null);
     font-style: normal;
     display: block;
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
+  }
+}
+
+.address__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

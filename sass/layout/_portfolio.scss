@@ -85,7 +85,8 @@
   @include fontstyles(var(--title-text-color), 500, 16px, 1.6, null);
   cursor: pointer;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
-    background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus,
