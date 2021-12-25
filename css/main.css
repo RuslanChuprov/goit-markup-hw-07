@@ -12,7 +12,7 @@
   --social-link-color: #afb1b8;
   --button-shadow: rgba(0, 0, 0, 0.25);
   --footer-social-link-color: rgba(255, 255, 255, 0.1);
-  --input-form-border: rgba(255, 255, 255, 0.2);
+  --input-form-border: rgba(33, 33, 33, 0.2);
   --time-duration: 500ms;
   --features-background-color: rgba(47, 48, 58, 0.8);
   --top-box-color: rgba(33, 150, 243, 0.9);
@@ -848,13 +848,16 @@ img {
   margin-bottom: 0;
 }
 
-.modal-input-wrap {
+.modal-input__wrap {
   position: relative;
 }
 
-.modal-input-text {
-  color: var(--logo-color);
+.modal-input__text {
+  color: var(--primary-text-color);
+  font-weight: 400;
   font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01;
   display: block;
   margin-bottom: 5px;
 }
@@ -863,8 +866,7 @@ img {
   display: block;
   width: 100%;
   height: 40px;
-  border: 1px solid;
-  border-color: var(--input-form-border);
+  border: 1px solid var(--input-form-border);
   border-radius: 4px;
   padding-left: 48px;
   padding-right: 31px;
@@ -883,7 +885,7 @@ img {
   border-color: var(--accent-text-color);
 }
 
-.modal-text {
+.modal__text {
   display: block;
   width: 100%;
   height: 100px;
@@ -897,11 +899,11 @@ img {
   transition: border-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-text:focus, .modal-text:hover {
+.modal__text:focus, .modal__text:hover {
   border-color: var(--accent-text-color);
 }
 
-.input-icon {
+.input__icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -913,11 +915,11 @@ img {
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-button-link:hover .icon-close {
+.modal-close__button-link:hover .icon-close {
   fill: var(--accent-text-color);
 }
 
-.modal-close-button {
+.modal-close__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -932,11 +934,11 @@ img {
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-button:hover, .modal-close-button:focus {
+.modal-close__button:hover, .modal-close__button:focus {
   fill: var(--accent-text-color);
 }
 
-.modal-title {
+.modal__title {
   position: absolute;
   color: var(--title-text-color);
   font-weight: 700;
@@ -947,7 +949,7 @@ img {
   margin-bottom: 12px;
 }
 
-.modal-submit-button {
+.modal-submit__button {
   display: flex;
   align-items: center;
   justify-content: center;
