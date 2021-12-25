@@ -3,20 +3,22 @@
   padding-top: 94px;
 }
 
-.properties {
+.differences {
   display: flex;
 
-  .item {
+  &__item {
     margin-right: 30px;
     width: 270px;
   }
 
-  .item:last-child {
-    margin-right: 0;
+  &__item {
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
-.property-item {
+.property__item {
   @include displayfunc(flex, center, center, null, null);
   background-color: var(--background-color);
   width: 270px;

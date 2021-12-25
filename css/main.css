@@ -96,12 +96,12 @@ img {
   letter-spacing: 0.06em;
 }
 
-.team-social-list {
+.team-social__list {
   display: flex;
   justify-content: center;
 }
 
-.team-social-item {
+.team-social__item {
   background-color: var(--accent-color);
   width: 44px;
   height: 44px;
@@ -109,11 +109,11 @@ img {
   transition: background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-social-item + .team-social-item {
+.team-social__item + .team-social__item {
   margin-left: 10px;
 }
 
-.social-link {
+.social__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -123,16 +123,16 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover, .social-link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-text-color);
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
   fill: var(--accent-color);
 }
 
-.social-icon {
+.social__icon {
   fill: var(--social-link-color);
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -389,20 +389,20 @@ img {
   padding-top: 94px;
 }
 
-.properties {
+.differences {
   display: flex;
 }
 
-.properties .item {
+.differences__item {
   margin-right: 30px;
   width: 270px;
 }
 
-.properties .item:last-child {
+.differences__item:last-child {
   margin-right: 0;
 }
 
-.property-item {
+.property__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -840,11 +840,11 @@ img {
   margin-top: 30px;
 }
 
-.modal-form-field {
+.modal-form__field {
   margin-bottom: 10px;
 }
 
-.modal-form-field:last-child {
+.modal-form__field:last-child {
   margin-bottom: 0;
 }
 
