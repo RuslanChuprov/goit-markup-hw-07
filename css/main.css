@@ -571,16 +571,12 @@ img {
   margin-bottom: 20px;
 }
 
-.address-row {
-  margin-bottom: 9px;
-}
-
 .connect {
   margin-left: 70px;
 }
 
-.connect-title,
-.online-title {
+.title__connect,
+.title__online {
   color: var(--accent-color);
   font-weight: 700;
   font-size: 14px;

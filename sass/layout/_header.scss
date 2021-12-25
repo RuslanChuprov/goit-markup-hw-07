@@ -41,6 +41,7 @@
 .nav {
   margin-left: 93px;
 }
+
 .site-nav {
   display: flex;
   @include fontstyles(var(--title-text-color), 500, 14px, 1.2, 0.02em);
@@ -95,10 +96,6 @@
     margin-left: 50px;
   }
 }
-
-// .auth-nav .item + .item {
-//   margin-left: 50px;
-// }
 
 .auth-nav {
   &__mail,

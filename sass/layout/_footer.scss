@@ -33,7 +33,6 @@
     @include fontstyles(null, 400, 14px, 1.7, null);
     font-style: normal;
     display: block;
-    // margin-bottom: 9px;
   }
 }
 
@@ -53,16 +52,12 @@
   margin-bottom: 20px;
 }
 
-.address-row {
-  margin-bottom: 9px;
-}
-
 .connect {
   margin-left: 70px;
 }
 
-.connect-title,
-.online-title {
+.title__connect,
+.title__online {
   @include fontstyles(var(--accent-color), 700, 14px, 1.2, 0.03em);
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -93,6 +88,7 @@
     fill: var(--accent-color);
   }
 }
+
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
 }
