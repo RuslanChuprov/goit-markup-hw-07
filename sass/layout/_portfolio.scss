@@ -1,18 +1,18 @@
-.section .images {
-  display: block;
-}
-
 .section {
+  .images {
+    display: block;
+  }
+
   .customers-title,
   .images,
   .list-team {
     @include fontstyles(var(--title-text-color), 700, 36px, 1.16, 0.03em);
     text-align: center;
   }
-}
 
-.section .list-team {
-  margin-bottom: 50px;
+  .list-team {
+    margin-bottom: 50px;
+  }
 }
 
 .signature {
