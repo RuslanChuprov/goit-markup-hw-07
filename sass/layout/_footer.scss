@@ -16,10 +16,13 @@
 
 .bottom {
   @include displayfunc(flex, null, null, null, left);
+  align-items: baseline;
 }
 
-.footer .bottom {
-  align-items: baseline;
+.footer {
+  .bottom {
+    align-items: baseline;
+  }
 }
 
 .page {

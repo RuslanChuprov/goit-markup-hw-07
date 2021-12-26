@@ -188,6 +188,8 @@
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  transform: rotate(90deg);
+.backdrop.is-hidden {
+  .modal {
+    transform: rotate(90deg);
+  }
 }
