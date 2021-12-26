@@ -56,14 +56,14 @@
   transition: border-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--logo-color);
 
-  &:focus + .input-icon,
-  &:hover + .input-icon {
-    fill: var(--accent-text-color);
-  }
-
   &:hover,
   &:focus {
     border-color: var(--accent-text-color);
+  }
+
+  &:hover + .input__icon,
+  &:focus + .input__icon {
+    fill: var(--accent-text-color);
   }
 }
 
@@ -147,33 +147,41 @@
   margin-top: 20px;
 }
 
-.modal-check-text {
+.modal-check__text {
   @include displayfunc(flex, center, null, null, null);
   @include fontstyles(var(--primary-text-color), 400, 14px, 1.71, 0.03em);
+
+  span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--logo-color);
+    margin-right: 5px;
+    border-radius: 2px;
+    @include displayfunc(flex, center, center, null, null);
+  }
 }
 
-.modal-check-text span {
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--logo-color);
-  margin-right: 5px;
-  border-radius: 2px;
-  @include displayfunc(flex, center, center, null, null);
+.modal-check {
+  &:checked + &__text {
+    span {
+      background-color: var(--accent-color);
+      border: none;
+    }
+  }
 }
 
-.modal-check:checked + .modal-check-text span {
-  background-color: var(--accent-color);
-  border: none;
-}
-
-.modal-check-link {
+.modal-check__link {
   @include fontstyles(var(--accent-text-color), 400, 14px, 1.71, 0.03em);
   text-decoration-line: underline;
   padding-left: 5px;
 }
 
-.modal-check:checked + .modal-check-text .icon-check {
-  fill: var(--accent-text-color);
+.modal-check {
+  &:checked + &__text {
+    .icon-check {
+      fill: var(--accent-text-color);
+    }
+  }
 }
 
 .icon-check {
