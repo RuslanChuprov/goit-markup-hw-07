@@ -33,8 +33,10 @@
   }
 }
 
-.customers__item + .customers__item {
-  margin-left: 30px;
+.customers {
+  &__item + &__item {
+    margin-left: 30px;
+  }
 }
 
 .customers__link {

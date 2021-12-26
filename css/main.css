@@ -89,6 +89,25 @@ img {
   padding: 0 15px;
 }
 
+.section .images {
+  display: block;
+}
+
+.section .customers-title,
+.section .images,
+.section .list-team {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.section .list-team {
+  margin-bottom: 50px;
+}
+
 .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -668,31 +687,12 @@ img {
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section .images {
-  display: block;
-}
-
-.section .customers-title,
-.section .images,
-.section .list-team {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
-.section .list-team {
-  margin-bottom: 50px;
-}
-
 .signature {
   background-color: var(--accent-color);
   padding: 30px;
 }
 
-.title-description {
+.title__description {
   margin-bottom: 10px;
   text-align: left;
   color: var(--title-text-color);
@@ -708,7 +708,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.title-team {
+.title__team {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -717,7 +717,7 @@ img {
   margin-bottom: 10px;
 }
 
-.section-content {
+.section__content {
   text-align: left;
   color: var(--primary-text-color);
   font-weight: 400;
@@ -737,34 +737,34 @@ img {
   padding-top: 94px;
 }
 
-.portfolio-section {
+.portfolio {
   padding: 94px 0;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-btns {
+.portfolio__btns {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio-btns .current {
+.portfolio__btns .current {
   background-color: var(--accent-text-color);
   color: var(--accent-color);
   box-shadow: 0 4px 4px 0 var(--button-shadow);
 }
 
-.btns-list:first-child {
-  margin-left: 0;
-}
-
-.btns-list {
+.btns__list {
   margin-left: 8px;
   transition: background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-button {
+.btns__list:first-child {
+  margin-left: 0;
+}
+
+.portfolio__button {
   border-radius: 4px;
   padding: 6px 22px;
   border: 0;
@@ -777,7 +777,7 @@ img {
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1), box-shadow var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-button:hover, .portfolio-button:focus, .portfolio-button:active {
+.portfolio__button:hover, .portfolio__button:focus, .portfolio__button:active {
   background-color: var(--accent-text-color);
   color: var(--accent-color);
   box-shadow: 0 4px 4px 0 var(--button-shadow);
