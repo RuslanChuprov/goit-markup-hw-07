@@ -144,6 +144,12 @@
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+  transition: box-shadow var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 4px 4px 0 var(--button-shadow);
+  }
 }
 
 .check-wrap {
