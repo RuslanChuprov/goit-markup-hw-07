@@ -10,6 +10,7 @@
 
 .modal {
   position: absolute;
+  // justify-content: center;
   padding: 40px;
   top: 50%;
   left: 50%;
@@ -22,7 +23,9 @@
 }
 
 .modal-form {
-  margin-top: 30px;
+  display: block;
+  justify-content: center;
+  padding-top: 30px;
 
   &__field {
     margin-bottom: 10px;
@@ -95,13 +98,8 @@
 }
 
 .icon-close {
+  fill: var(--title-text-color);
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close__button-link {
-  &:hover .icon-close {
-    fill: var(--accent-text-color);
-  }
 }
 
 .modal-close__button {
@@ -114,11 +112,15 @@
   border-radius: 50%;
   border: 1px solid var(--address-color);
   @include displayfunc(flex, center, center, null, null);
-  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    border-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    fill: var(--accent-text-color);
+    .icon-close {
+      fill: var(--accent-text-color);
+      border-color: var(--accent-color);
+    }
   }
 }
 
@@ -140,14 +142,17 @@
   cursor: pointer;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1),
     background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 30px auto;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .check-wrap {
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .modal-check__text {
+  display: block;
   @include displayfunc(flex, center, null, null, null);
   @include fontstyles(var(--primary-text-color), 400, 14px, 1.71, 0.03em);
 

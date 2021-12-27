@@ -820,7 +820,9 @@ img {
 }
 
 .modal-form {
-  margin-top: 30px;
+  display: block;
+  justify-content: center;
+  padding-top: 30px;
 }
 
 .modal-form__field {
@@ -895,11 +897,8 @@ img {
 }
 
 .icon-close {
+  fill: var(--title-text-color);
   transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close__button-link:hover .icon-close {
-  fill: var(--accent-text-color);
 }
 
 .modal-close__button {
@@ -914,11 +913,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1), border-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close__button:hover, .modal-close__button:focus {
+.modal-close__button:hover .icon-close, .modal-close__button:focus .icon-close {
   fill: var(--accent-text-color);
+  border-color: var(--accent-color);
 }
 
 .modal__title {
@@ -947,14 +947,17 @@ img {
   height: 50px;
   cursor: pointer;
   transition: color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--time-duration) cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 30px auto;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .check-wrap {
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .modal-check__text {
+  display: block;
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
